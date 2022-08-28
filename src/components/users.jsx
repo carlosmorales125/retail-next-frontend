@@ -14,9 +14,9 @@ export const Users = () => {
     return (
         <div className='flex'>
             <ul>
-                { users.map(user => {
+                { users.map((user, index) => {
                     return (
-                        <li>
+                        <li key={`${index}-user-list-item`}>
                             { user.name }
                         </li>
                     );
